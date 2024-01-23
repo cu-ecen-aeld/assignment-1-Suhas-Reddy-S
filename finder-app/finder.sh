@@ -23,4 +23,4 @@ num_of_files=$(ls -r "${filesdir}" | wc -l)
 # Get the number of occurrences of the search string
 num_of_occurrences=$(grep -r "${searchstr}" "${filesdir}" | wc -l)
 
-echo "The number of files is ${num_of_files} and the number of occurrences is ${num_of_occurrences}."
+echo "The number of files are  ${num_of_files} and the number of matching lines are ${num_of_occurrences}."
