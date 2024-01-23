@@ -22,13 +22,15 @@ then
 fi
 
 # Check if the specified path is a directory
-if [ -d "$writefile" ]; then
+if [ -d "$writefile" ] 
+then
   echo "Error: The specified path is a directory. Please provide a valid file path."
   exit 1
+else
+  # Write the string to the file
+  echo "${writestr}" > "${writefile}"
+  exit 0
 fi
-
-# Write the string to the file
-echo "${writestr}" > "${writefile}"
 
 # Check if the file creation was successful
 if [ $? -ne 0 ] 
