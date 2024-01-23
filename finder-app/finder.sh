@@ -18,7 +18,7 @@ then
   exit 1
 fi 
   # Get the number of files in the directory
-  num_of_files=$(find "${filesdir}" -type f | wc -l)
+  num_of_files=$(find "${filesdir}" | wc -l)
 
   # Get the number of occurrences of the search string
   num_of_occurrences=$(grep -R "${searchstr}" "${filesdir}" | wc -l)
