@@ -17,10 +17,10 @@ then
   echo "Error: The specified directory '${filesdir}' doesn't exist. Please enter a valid path."
   exit 1
 fi 
-  # Get the number of files in the directory
-  num_of_files=$(ls "${filesdir}" | wc -l)
+# Get the number of files in the directory
+num_of_files=$(ls "${filesdir}" | wc -l)
 
-  # Get the number of occurrences of the search string
-  num_of_occurrences=$(grep -R "${searchstr}" "${filesdir}" | wc -l)
+# Get the number of occurrences of the search string
+num_of_occurrences=$(grep -r "${searchstr}" "${filesdir}" | wc -l)
 
-  echo "The number of files is ${num_of_files} and the number of occurrences is ${num_of_occurrences}."
+echo "The number of files is ${num_of_files} and the number of occurrences is ${num_of_occurrences}."
