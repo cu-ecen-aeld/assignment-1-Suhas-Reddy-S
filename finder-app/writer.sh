@@ -36,5 +36,4 @@ fi
 if [ $? -ne 0 ] 
 then
   echo "Error creating the file"
-  exit 1
 fi
