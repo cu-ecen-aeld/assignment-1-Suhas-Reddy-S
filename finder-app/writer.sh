@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # Author: Suhas-Reddy-S
 
 # Variables to hold first and second CLI arguments
